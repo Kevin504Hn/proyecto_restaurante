@@ -1,0 +1,228 @@
+/* Restablece los márgenes y el relleno predeterminados, establece la fuente y el modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    position: relative; /* Establece la posición relativa */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para el logo */
+#logo {
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+#logo img {
+    width: 60px; /* Ancho de la imagen */
+    height: 60px; /* Altura de la imagen */
+}
+
+.navigation nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation nav ul li {
+    display: block;
+    padding: 0;
+    margin-right: 20px;
+}
+
+ nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 0 0 0;
+    transition: 0.5s all ease-in;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation nav ul li a:hover {
+    color: #000;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+/* Estilos para el botón de contacto */
+#btnContact {
+    background-color: rgb(141, 67, 232); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5px 9px; /* Relleno interno */
+    border-radius: 8px; /* Borde redondeado */
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+
+@media (min-width:768px) {
+
+    header {
+        display: block;
+    }
+
+     .logo-container{
+        order: -1;
+    }
+
+    header .navigation{
+        align-self: flex-end;
+        justify-content: right;
+        right: 0;
+    }
+
+    header .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    header .navigation ul li{
+        margin: 5px 0;
+        max-width: 200px;
+    }
+
+    header .navigation ul li a 
+    {
+    /*    box-sizing: border-box;
+        padding: 0.8rem 1rem;
+        */
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 15px;
+    transition: 0.5s all ease-in;
+    width: 100%;
+    text-align: center;
+    
+    }
+
+
+
+    .grid .col-m-1 {
+        flex: 0 0 calc(100% / 12);
+    }
+
+    .grid .col-m-2 {
+        flex: 0 0 calc(100% / 6);
+    }
+
+    .grid .col-m-3 {
+        flex: 0 0 calc(100% / 4);
+    }
+
+    .grid .col-m-4 {
+        flex: 0 0 calc(100% / 3);
+    }
+
+    .grid .col-m-5 {
+        flex: 0 0 calc(100% / 12 * 5);
+    }
+
+    .grid .col-m-6 {
+        flex: 0 0 calc(100% / 2);
+    }
+
+    .grid .col-m-7 {
+        flex: 0 0 calc(100% / 12 * 7);
+    }
+
+    .grid .col-m-8 {
+        flex: 0 0 calc(100% / 12 * 8);
+    }
+
+    .grid .col-m-9 {
+        flex: 0 0 calc(100% / 12 * 9);
+    }
+
+    .grid .col-m-10 {
+        flex: 0 0 calc(100% / 12 * 10);
+    }
+
+    .grid .col-m-11 {
+        flex: 0 0 calc(100% / 12 * 11);
+    }
+
+    .grid .col-m-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width:1025px) {
+    
+    .grid .col-l-1 {
+        flex: 0 0 calc(100% / 12);
+    }
+
+    .grid .col-l-2 {
+        flex: 0 0 calc(100% / 6);
+    }
+
+    .grid .col-l-3 {
+        flex: 0 0 calc(100% / 4);
+    }
+
+    .grid .col-l-4 {
+        flex: 0 0 calc(100% / 3);
+    }
+
+    .grid .col-l-5 {
+        flex: 0 0 calc(100% / 12 * 5);
+    }
+
+    .grid .col-l-6 {
+        flex: 0 0 calc(100% / 2);
+    }
+
+    .grid .col-l-7 {
+        flex: 0 0 calc(100% / 12 * 7);
+    }
+
+    .grid .col-l-8 {
+        flex: 0 0 calc(100% / 12 * 8);
+    }
+
+    .grid .col-l-9 {
+        flex: 0 0 calc(100% / 12 * 9);
+    }
+
+    .grid .col-l-10 {
+        flex: 0 0 calc(100% / 12 * 10);
+    }
+
+    .grid .col-l-11 {
+        flex: 0 0 calc(100% / 12 * 11);
+    }
+
+    .grid .col-l-12 {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width:1200px) {}
