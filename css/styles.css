@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+    --border-section: 56px 56px 0 0;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness) (matiz, saturacion, intensidad)*/
+    --first-color: hsl(12, 32%, 22%);
+    --second-color: hsl(39, 62%, 65%);
+    --text-color-light: hsl(12, 8%, 48%);
+    --white-color: #fff;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --second-font: "Pacifico", cursive;
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+    /* margin right and left */
+}
+
+/*=============== HEADER & NAV ===============*/
+
+.header {
+    top: 0;
+    width: 100%;
+    background-color: var(--first-color);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: var(--h3-font-size);
+    font-family: var(--second-font);
+}
+
+.nav__logo img {
+    width: 28px;
+}
+
+.pie__pagina {
+    width: 100%;
+    background-color: var(--first-color);
+}
+
+.pie__pagina .grupo__1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    text-align: center;
+}
+
+.pie__pagina .grupo__1 .caja figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie__pagina .grupo__1 .caja figure img {
+    width: 250px;
+}
+
+.pie__pagina .grupo__1 .caja h2 {
+    color: var(--white-color);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie__pagina .grupo__1 .caja p {
+    color: var(--white-color);
+}
+
+.pie__pagina .grupo__1 .red__social a {
+    font-size: 35px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: var(--white-color);
+    margin-right: 10px;
+    background-color: var(--first-color);
+    text-align: center;
+}
+
+.pie__pagina .grupo__1 .red__social a:hover {
+    color: var(--second-color);
+}
+
+.pie__pagina .grupo__2 {
+    background-color: var(--second-color);
+    padding: 15px 10px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.pie__pagina .grupo__2 small {
+    font-size: 15px;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1023px) {
+    .nav__menu {
+        background: linear-gradient(180deg,
+                var(--first-color) 0%,
+                var(--first-color-alt) 100%);
+        border-radius: 56px 56px 0 0;
+    }
+
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 4.5rem;
+}
+
+.nav__link {
+    color: var(--white-color);
+    font-family: var(--second-font);
+}
+
+.nav__link:hover {
+    color: var(--second-color);
+}
+
+/* For large devices */
+
+.nav {
+    height: calc(var(--header-height) + 2rem);
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1152px) {
+    .container {
+        margin-inline: auto;
+    }
+}

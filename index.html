@@ -1,57 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset='utf-8'>
-    <title>Restaurante</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' href="css/style.css">
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hong Kong</title>
 </head>
 
 <body>
-    <header>
-        <div class="navigation">
-            <a href="#home"><img id="logo" src="https://placehold.co/60x60"></a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
+    <header class="header" id="header">
+        <div class="header__border"></div>
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/Hong Kong Logo 612x612.jpg" alt="Logo">
+                Hong Kong
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="ri-ancient-pavilion-line"></i>
+                            <span>Inicio</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#meals">Meals</a>
+                    <li class="nav__item">
+                        <a href="#tienda" class="nav__link">
+                            <i class="ri-store-line"></i>
+                            <span>Tienda</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#drinks">Drinks</a>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">
+                            <i class="ri-book-open-line"></i>
+                            <span>Blog</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#about">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#contact" id="btnContact2">Contact Us</a>
-                    </li>
-                    <li>
-                        <a><img src=""></a>
+                    <li class="nav__item">
+                        <a href="nosotros.html" class="nav__link">
+                            <i class="ri-award-fill"></i>
+                            <span>Nosotros</span>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
-            <div class="Hero-Panel">
 
-            </div>
-        </section>
     </main>
+    <footer class="pie__pagina">
+        <div class="grupo__1">
+            <div class="caja">
+                <figure>
+                    <a href="#">
+                        <img src="img/Hong Kong Logo 612x612.jpg" alt="Logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="caja">
+                <h2>Historia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quidem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quidem.</p>
+            </div>
+            <div class="caja">
+                <h2>Redes Sociales</h2>
+                <div class="red__social">
+                    <a href="https://wa.link/1lc6cz" class="fa fa-whatsapp">
+                    </a>
+                    <a href="#Facebook" class="fa fa-facebook">
+                    </a>
+                    <a href="#Instagram" class="fa fa-instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo__2">
+            <small>&copy;2024 <b>Hong Hong</b> -Todos los derechos reservados.</small>
+        </div>
+    </footer>
 </body>
-<footer>
-    <section class="copyright">
-        <p>&copy; 2024 Restaurante "Nombre del Restaurante". Todos los derechos reservados.</p>
-    </section>
-</footer>
 
 </html>
