@@ -12,14 +12,15 @@ img {
 
 /* Estilos para las tarjetas */
 article.card {
-    width: 90vw; /* Ancho de la tarjeta en porcentaje del ancho de la ventana */
+    width: calc(90vw - 20px); /* Ancho de la tarjeta en porcentaje del ancho de la ventana, considerando el espacio entre tarjetas */
     max-width: 600px; /* Ancho máximo de la tarjeta */
     background: #f8f8f8;
     border-radius: 8px;
-    margin: 1em auto; /* Margen exterior */
+    margin: 1em 10px; /* Margen exterior con espacio entre tarjetas */
     box-shadow: 0 0 12px #d7d7d7;
     display: inline-block; /* Permite que las tarjetas se alineen horizontalmente */
     vertical-align: top; /* Alinea las tarjetas en la parte superior */
+    white-space: normal; /* Permite que el texto se ajuste dentro de la tarjeta */
 }
 
 /* Estilos para la imagen del encabezado */
@@ -41,9 +42,10 @@ article.card {
     border-radius: 4px;
 }
 
+
 /* Estilos para el pie de página de la tarjeta */
 .card footer {
-    padding: 0 1em;
+    padding: 1em; /* Espacio interior para el pie de página */
 }
 
 /* Estilos para el contenedor del perfil */
