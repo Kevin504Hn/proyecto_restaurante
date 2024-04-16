@@ -61,6 +61,13 @@ body{
     margin-bottom: 10px;
 }
 
+.pricing-panel .card h4 {
+    font-weight: 600;
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
 .pricing-panel .card p {
     font-weight: 600;
 }
@@ -112,4 +119,5 @@ body{
     color: #fff;
     font-weight: 400;
     -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
 }
