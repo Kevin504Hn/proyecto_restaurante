@@ -80,7 +80,7 @@ a {
 }
 
 .nav__logo {
-    margin-right: 10%;
+    margin-right: 5%;
     color: var(--white-color);
     /* Color del logo */
     display: flex;
@@ -96,6 +96,7 @@ a {
 }
 
 .nav__logo img {
+    margin-left: -70%;
     width: 28px;
     /* Ancho de imagen */
 }
