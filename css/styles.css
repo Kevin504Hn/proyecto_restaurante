@@ -1,176 +1,247 @@
+/* Importar la fuente Pacifico desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Variables globales */
 :root {
     --header-height: 3.5rem;
+    /* Altura del encabezado */
     --border-section: 56px 56px 0 0;
+    /* Bordes de sección */
 
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness) (matiz, saturacion, intensidad)*/
+    /* Colores */
     --first-color: hsl(12, 32%, 22%);
+    /* Primer color */
     --second-color: hsl(39, 62%, 65%);
+    /* Segundo color */
     --text-color-light: hsl(12, 8%, 48%);
+    /* Color de texto claro */
     --white-color: #fff;
+    /* Color blanco */
 
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
+    /* Tipografía */
     --second-font: "Pacifico", cursive;
+    /* Fuente secundaria */
 }
 
-/*=============== BASE ===============*/
+/* Estilos base */
 * {
     box-sizing: border-box;
+    /* Modelo de caja */
     padding: 0;
+    /* Padding */
     margin: 0;
+    /* Margen */
 }
 
 html {
     scroll-behavior: smooth;
+    /* Comportamiento de desplazamiento suave */
 }
 
 ul {
     list-style: none;
+    /* Quitar viñetas de lista */
 }
 
 a {
     text-decoration: none;
+    /* Quitar subrayado del enlace */
     color: var(--white-color);
+    /* Color del enlace */
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* Clase de contenedor */
 .container {
     max-width: 1120px;
+    /* Ancho máximo del contenedor */
     margin-inline: 1.5rem;
-    /* margin right and left */
+    /* Margen derecho e izquierdo */
 }
 
-/*=============== HEADER & NAV ===============*/
-
+/* Encabezado y navegación */
 .header {
     top: 0;
+    /* Posicionamiento en la parte superior */
     width: 100%;
+    /* Ancho completo */
     background-color: var(--first-color);
+    /* Color de fondo */
 }
 
 .nav {
     height: var(--header-height);
+    /* Altura del encabezado */
     display: flex;
+    /* Mostrar como flex */
     justify-content: center;
+    /* Justificar contenido */
     align-items: center;
+    /* Alinear elementos */
 }
 
 .nav__logo {
     color: var(--white-color);
+    /* Color del logo */
     display: flex;
+    /* Mostrar como flex */
     align-items: center;
+    /* Alinear elementos */
     column-gap: 0.5rem;
+    /* Espacio entre columnas */
     font-size: var(--h3-font-size);
+    /* Tamaño de fuente */
     font-family: var(--second-font);
+    /* Fuente secundaria */
 }
 
 .nav__logo img {
     width: 28px;
+    /* Ancho de imagen */
 }
 
+/* Pie de página */
 .pie__pagina {
     width: 100%;
+    /* Ancho completo */
     background-color: var(--first-color);
+    /* Color de fondo */
 }
 
 .pie__pagina .grupo__1 {
     width: 100%;
+    /* Ancho completo */
     max-width: 1200px;
+    /* Ancho máximo */
     margin: auto;
+    /* Margen automático */
     display: grid;
+    /* Mostrar como cuadrícula */
     grid-template-columns: repeat(3, 1fr);
+    /* Repe```tir 3 columnas con el mismo tamaño */
     grid-gap: 50px;
+    /* Espacio entre celdas */
     padding: 45px 0px;
+    /* Relleno superior e inferior */
     text-align: center;
+    /* Alineación del texto */
 }
 
 .pie__pagina .grupo__1 .caja figure {
     width: 100%;
+    /* Ancho completo */
     height: 100%;
+    /* Altura completa */
     display: flex;
+    /* Mostrar como flex */
     justify-content: center;
+    /* Justificar contenido */
     align-items: center;
+    /* Alinear elementos */
 }
 
 .pie__pagina .grupo__1 .caja figure img {
     width: 250px;
+    /* Ancho de imagen */
 }
 
 .pie__pagina .grupo__1 .caja h2 {
     color: var(--white-color);
+    /* Color del texto */
     margin-bottom: 25px;
+    /* Margen inferior */
     font-size: 20px;
+    /* Tamaño de fuente */
 }
 
 .pie__pagina .grupo__1 .caja p {
     color: var(--white-color);
+    /* Color del texto */
 }
 
 .pie__pagina .grupo__1 .red__social a {
     font-size: 35px;
+    /* Tamaño de fuente */
     display: inline-block;
+    /* Mostrar como bloque en línea */
     text-decoration: none;
+    /* Quitar decoración de enlace */
     width: 45px;
+    /* Ancho */
     height: 45px;
+    /* Altura */
     line-height: 45px;
+    /* Altura de línea */
     color: var(--white-color);
+    /* Color del texto */
     margin-right: 10px;
+    /* Margen derecho */
     background-color: var(--first-color);
+    /* Color de fondo */
     text-align: center;
+    /* Alineación del texto */
 }
 
 .pie__pagina .grupo__1 .red__social a:hover {
     color: var(--second-color);
+    /* Color del texto al pasar el mouse */
 }
 
 .pie__pagina .grupo__2 {
     background-color: var(--second-color);
+    /* Color de fondo */
     padding: 15px 10px;
+    /* Relleno */
     text-align: center;
+    /* Alineación del texto */
     color: var(--white-color);
+    /* Color del texto */
 }
 
 .pie__pagina .grupo__2 small {
     font-size: 15px;
+    /* Tamaño de fuente */
 }
 
-/* Navigation for mobile devices */
+/* Navegación para dispositivos móviles */
 @media screen and (max-width: 1023px) {
     .nav__menu {
-        background: linear-gradient(180deg,
-                var(--first-color) 0%,
-                var(--first-color-alt) 100%);
+        background: linear-gradient(180deg, var(--first-color) 0%, var(--first-color-alt) 100%);
+        /* Degradado de fondo */
         border-radius: 56px 56px 0 0;
+        /* Bordes redondeados */
     }
-
 }
 
 .nav__list {
     display: flex;
+    /* Mostrar como flex */
     column-gap: 4.5rem;
+    /* Espacio entre columnas */
 }
 
 .nav__link {
     color: var(--white-color);
+    /* Color del texto del enlace */
     font-family: var(--second-font);
+    /* Fuente secundaria */
 }
 
 .nav__link:hover {
     color: var(--second-color);
+    /* Color del texto del enlace al pasar el mouse */
 }
 
-/* For large devices */
-
+/* Para dispositivos grandes */
 .nav {
     height: calc(var(--header-height) + 2rem);
+    /* Altura del encabezado */
     justify-content: space-between;
+    /* Justificar contenido */
 }
 
 @media screen and (min-width: 1152px) {
     .container {
         margin-inline: auto;
+        /* Margen automático */
     }
 }

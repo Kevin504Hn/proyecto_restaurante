@@ -1,62 +1,148 @@
+/* Estilos generales para las imágenes */
 img {
     max-width: 100%;
+    /* Ancho máximo del 100% */
 }
 
+/* Estilos para el texto dentro de las tarjetas */
+.texto-card p {
+    border-left: 5px solid #0c94e8;
+    /* Línea azul vertical a la izquierda del texto */
+    padding-left: 15px;
+    /* Espaciado a la izquierda del texto */
+}
+
+.texto-card h3 {
+    padding-top: .5em;
+    /* Espaciado superior del título */
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.card-container {
+    width: 100%;
+    /* Ancho total del contenedor */
+    overflow-x: hidden;
+    /* Ocultar el desbordamiento horizontal */
+    white-space: nowrap;
+    /* Evitar que las tarjetas se dividan en varias líneas */
+}
+
+/* Estilos para las tarjetas */
 article.card {
     max-width: 350px;
+    /* Ancho máximo de la tarjeta */
     background: #f8f8f8;
+    /* Fondo */
     border-radius: 8px;
+    /* Bordes redondeados */
     margin: 1em;
+    /* Margen entre tarjetas */
     box-shadow: 0 0 12px #d7d7d7;
+    /* Sombra */
+    transition: transform .2s, box-shadow .2s;
+    /* Transición */
+    display: inline-block;
+    /* Mostrar en línea */
+    vertical-align: top;
+    /* Alinear en la parte superior */
+    white-space: normal;
+    /* Espacio en blanco normal */
 }
 
+/* Efecto al pasar el mouse sobre la tarjeta */
+article.card:hover {
+    transform: translateY(-10px);
+    /* Desplazar hacia arriba */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Sombra más oscura */
+}
+
+/* Estilos para la imagen del encabezado */
 .header-card img {
     border-radius: 8px 8px 0 0;
+    /* Bordes redondeados */
     max-height: 200px;
+    /* Altura máxima */
     height: 200px;
+    /* Altura */
     width: 100%;
+    /* Ancho del 100% */
+    object-fit: cover;
+    /* Ajustar la imagen */
 }
 
+/* Estilos para la categoría */
 .categoria-card {
     margin-top: 1em;
+    /* Margen superior */
+    margin-left: -.1em;
+    /* Margen izquierdo */
 }
 
+/* Estilos para el puesto del empleado */
 .categoria-card span {
     background: #25c4d8;
+    /* Fondo */
     color: #fff;
+    /* Color de la letra */
     padding: .2em .5em;
+    /* Espaciado */
     border-radius: 4px;
+    /* Bordes redondeados */
 }
 
+/* Estilos para el pie de página de la tarjeta */
 .card footer {
     padding: 0 1em;
+    /* Espaciado interior */
 }
 
+/* Estilos para el contenedor del perfil */
 .perfil-card {
     display: flex;
+    /* Mostrar como flex */
     align-items: center;
+    /* Alinear elementos */
 }
 
-.img-perdil-card {
+/* Estilos para la imagen de perfil */
+.img-perfil-card {
     display: flex;
+    /* Mostrar como flex */
 }
 
-.img-ferdil-card img {
+.img-perfil-card img {
     width: 50px;
+    /* Ancho */
+    height: 50px;
+    /* Altura */
     margin: 1em 1em 1em 0;
+    /* Margen */
     border-radius: 50%;
+    /* Bordes redondeados */
 }
 
+/* Estilos para el texto del perfil */
 .text-perfil-card {
     display: flex;
+    /* Mostrar como flex */
     flex-flow: column;
+    /* Dirección de flexión */
 }
 
-.text-perfil-card span:nth-child(2){
+.text-perfil-card span:nth-child(2) {
     color: #cfcfcf;
+    /* Color */
 }
 
-.card-wrap{
+/* Centra las cartas en el centro */
+.card-wrap {
     display: flex;
+    /* Mostrar como flex */
     flex-flow: wrap;
+    /* Dirección de flexión */
+    justify-content: center;
+    /* Justificar contenido */
+    align-items: center;
+    /* Alinear elementos */
 }
