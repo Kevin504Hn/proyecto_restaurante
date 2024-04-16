@@ -4,8 +4,8 @@ body {
     padding: 0;
 }
 
-.container {
-    flex: 1;    
+.containero {
+    flex: 1;
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
