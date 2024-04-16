@@ -1,0 +1,267 @@
+/* Estilos para elementos con la clase .hero */
+.hero {
+    position: relative;
+    /* Posición relativa */
+    width: 100%;
+    /* Ancho */
+    padding: 0px;
+    /* Relleno */
+    margin: 0px auto;
+    /* Margen */
+    height: 640px;
+    /* Altura */
+    overflow: hidden;
+    /* Desbordamiento oculto */
+}
+
+/* Estilos para elementos con la clase .boxmodel dentro de .hero */
+.hero .boxmodel {
+    width: 100%;
+    /* Ancho */
+    height: 100%;
+    /* Altura */
+    padding: 0px;
+    /* Relleno */
+    margin: 0px;
+    /* Margen */
+}
+
+/* Estilos para imágenes dentro de .boxmodel dentro de .hero */
+.hero .boxmodel img {
+    width: 100%;
+    /* Ancho */
+    height: 100%;
+    /* Altura */
+    object-fit: cover;
+    /* Ajuste de objeto */
+}
+
+/* Estilos para etiquetas h2 */
+h2 {
+    text-align: center;
+    /* Alineación de texto */
+    padding-top: .2em;
+    /* Relleno superior */
+    font-size: 80px;
+    /* Tamaño de fuente */
+    font-family: var(--second-font);
+    /* Familia de fuente */
+}
+
+/* Estilos para elementos con la clase .dog */
+.dog {
+    margin: 0;
+    /* Margen */
+    padding: 0;
+    /* Relleno */
+    box-sizing: border-box;
+    /* Modelo de caja */
+    display: flex;
+    /* Mostrar como flex */
+    flex-wrap: wrap;
+    /* Envolver elementos flexibles */
+    align-items: flex-start;
+    /* Alinear elementos en la parte superior */
+    justify-content: center;
+    /* Justificar contenido en el centro */
+}
+
+/* Estilos para elementos con la clase .card */
+.card {
+    position: relative;
+    /* Posición relativa */
+    width: 300px;
+    /* Ancho */
+    height: 350px;
+    /* Altura */
+    margin-left: 2em;
+    /* Margen izquierdo */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    vertical-align: top;
+    /* Alinear en la parte superior */
+    white-space: normal;
+    /* Espacio en blanco normal */
+}
+
+/* Estilos para elementos con la clase .face dentro de .card */
+.card .face {
+    position: absolute;
+    /* Posición absoluta */
+    width: 100%;
+    /* Ancho */
+    height: 100%;
+    /* Altura */
+    backface-visibility: hidden;
+    /* Visibilidad de la cara posterior */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Desbordamiento oculto */
+    transition: .5s;
+    /* Transición */
+}
+
+/* Estilos para elementos con la clase .front dentro de .card */
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    /* Transformación */
+    box-shadow: 0 5px 10px #000;
+    /* Sombra */
+}
+
+/* Estilos para elementos img dentro de .front dentro de .card */
+.card .front img {
+    position: absolute;
+    /* Posición absoluta */
+    width: 100%;
+    /* Ancho */
+    height: 100%;
+    /* Altura */
+    object-fit: cover;
+    /* Ajuste de objeto */
+}
+
+/* Estilos para h3 dentro de .front dentro de .card */
+.card .front h3 {
+    position: absolute;
+    /* Posición absoluta */
+    bottom: 0;
+    /* Abajo */
+    width: 100%;
+    /* Ancho */
+    height: 45px;
+    /* Altura */
+    line-height: 45px;
+    /* Altura de línea */
+    color: #fff;
+    /* Color */
+    background-color: rgba(0, 0, 0, .4);
+    /* Color de fondo */
+    text-align: center;
+    /* Alineación de texto */
+}
+
+/* Estilos para elementos con la clase .back dentro de .card */
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    /* Transformación */
+    background: hsl(12, 32%, 22%);
+    /* Fondo */
+    padding: 15px;
+    /* Relleno */
+    color: #f3f3f3;
+    /* Color */
+    display: flex;
+    /* Mostrar como flex */
+    flex-direction: column;
+    /* Dirección de flexión */
+    justify-content: space-between;
+    /* Justificar contenido entre ellos */
+    text-align: center;
+    /* Alineación de texto */
+    box-shadow: 0 5px 10px #000;
+    /* Sombra */
+}
+
+/* Estilos para elementos con la clase .lin dentro de .back */
+.card .back .lin {
+    border-top: solid 1px #f3f3f3;
+    /* Borde superior */
+    height: 50px;
+    /* Altura */
+    line-height: 50px;
+    /* Altura de línea */
+    font-size: 25px;
+    /* Tamaño de fuente */
+}
+
+/* Estilos para elementos a dentro de .lin dentro de .back */
+.card .back .lin a {
+    margin: 11px;
+    /* Margen */
+    display: block;
+    /* Mostrar como bloque */
+    color: var(--second-color);
+    /* Color */
+    transition: transform .2s, box-shadow .2s;
+    /* Transición */
+    background-color: beige;
+    /* Color de fondo */
+}
+
+/* Estilos para elementos a:hover dentro de .lin dentro de .back */
+.card .back .lin a:hover {
+    transform: translateY(-10px);
+    /* Transformación */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
+    /* Sombra */
+}
+
+/* Estilos para h3 dentro de .back dentro de .card */
+.card .back h3 {
+    font-size: 30px;
+    /* Tamaño de fuente */
+    margin-top: 20px;
+    /* Margen superior */
+    letter-spacing: 2px;
+    /* Espaciado de letras */
+}
+
+/* Estilos para p dentro de .back dentro de .card */
+.card .back p {
+    letter-spacing: 2px;
+    /* Espaciado de letras */
+}
+
+/* Efecto de volteo al pasar el mouse sobre .front dentro de .card */
+.card:hover .front {
+    transform: perspective(600px) rotateY(100deg);
+    /* Transformación */
+}
+
+/* Efecto de volteo al pasar el mouse sobre .back dentro de .card */
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+    /* Transformación */
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 768px */
+@media only screen and (max-width: 768px) {
+    .dog {
+        display: flex;
+        /* Mostrar como flex */
+        flex-direction: column;
+        /* Dirección de flexión */
+        align-items: center;
+        /* Alinear elementos */
+    }
+
+    .card {
+        margin: 2em;
+        /* Margen */
+    }
+}
+
+/* Estilos específicos para pantallas con un ancho mínimo de 768px */
+@media only screen and (min-width: 768px) {
+    .dog {
+        display: flex;
+        /* Mostrar como flex */
+        flex-wrap: wrap;
+        /* Envolver elementos flexibles */
+        align-items: flex-start;
+        /* Alinear elementos en la parte superior */
+        justify-content: center;
+        /* Justificar contenido en el centro */
+    }
+
+    .card {
+        width: 300px;
+        /* Ancho */
+        height: 350px;
+        /* Altura */
+        margin: 2em;
+        /* Margen */
+    }
+}
