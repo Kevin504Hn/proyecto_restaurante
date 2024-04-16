@@ -10,6 +10,7 @@ img {
     /* Línea azul vertical a la izquierda del texto */
     padding-left: 15px;
     /* Espaciado a la izquierda del texto */
+    font-size: 18px;
 }
 
 .texto-card h3 {
@@ -131,7 +132,7 @@ article.card:hover {
 }
 
 .text-perfil-card span:nth-child(2) {
-    color: #cfcfcf;
+    color: grey;
     /* Color */
 }
 
