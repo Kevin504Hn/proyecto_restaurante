@@ -112,4 +112,5 @@ body{
     color: #fff;
     font-weight: 400;
     -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
 }
