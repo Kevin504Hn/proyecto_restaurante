@@ -12,6 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="js/foods.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>Hong Kong</title>
 </head>
 
@@ -72,52 +78,63 @@
         </section>
         <section class="pricing-panel">
             <div class="card">
-                <img src="https://placehold.co/300x220" alt="Servicio 1">
+                <img src="img/sopamarinera.jpg" alt="Servicio 1">
                 <h3>Wantan Frita de Pollo</h3>
-                <p>Cantidad:</p>
+                <h4>(20 unidades)</h4>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
                 <p>Precio: L.
-                <div class="price-items">160</div>
+                    <span class="price-items">460</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
                 </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
             </div>
 
             <div class="card">
-                <img src="https://placehold.co/300x220" alt="Servicio 1">
-                <h3>Wantan Frita de Camarón</h3>
-                <p>Cantidad:</p>
+                <img src="img/sopadecamaron.jpg" alt="Servicio 2">
+                <h3>Sopa de Camarón</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
                 <p>Precio: L.
-                <div class="price-items">230</div>
+                    <span class="price-items">300</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
                 </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
             </div>
 
             <div class="card">
-                <img src="https://placehold.co/300x220" alt="Servicio 1">
-                <h3>Tacos Chinos</h3>
-                <p>Cantidad:</p>
+                <img src="img/sopadecaracol.jpg" alt="Servicio 3">
+                <h3>Sopa de Caracol</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
                 <p>Precio: L.
-                <div class="price-items">160</div>
+                    <span class="price-items">300</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
                 </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
             </div>
 
-            <div class="card">
-                <img src="https://placehold.co/300x220" alt="Servicio 1">
-                <h3>Papas Fritas</h3>
-                <p>Cantidad:</p>
-                <p>Precio: L.
-                <div class="price-items">160</div>
-                </p>
-                <div class="container-details">
-                    <button type="submit" id="btn_order">Ordenar</button>
-                </div>
-            </div>
         </section>
     </main>
     <footer class="pie__pagina">
