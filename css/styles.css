@@ -80,7 +80,6 @@ a {
 }
 
 .nav__logo {
-    margin-right: 10%;
     color: var(--white-color);
     /* Color del logo */
     display: flex;

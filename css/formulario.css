@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-.container {
+.containero {
     flex: 1;
     max-width: 800px;
     margin: 50px auto;
@@ -15,17 +15,18 @@ body {
 }
 
 .map-responsive {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-  }
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
 .map-responsive iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 h2 {
@@ -77,4 +78,12 @@ button:focus {
 
 button:active {
     transform: translateY(1px);
+}
+
+.nav__list {
+    display: flex;
+    /* Mostrar como flex */
+    column-gap: 1.3rem;
+    /* Espacio entre columnas */
+    margin-top: 1em;
 }
