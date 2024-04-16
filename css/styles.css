@@ -80,6 +80,7 @@ a {
 }
 
 .nav__logo {
+    margin-right: 5%;
     color: var(--white-color);
     /* Color del logo */
     display: flex;
@@ -95,6 +96,7 @@ a {
 }
 
 .nav__logo img {
+    margin-left: -70%;
     width: 28px;
     /* Ancho de imagen */
 }
@@ -157,6 +159,7 @@ a {
 .pie__pagina .grupo__1 .caja p {
     color: var(--white-color);
     /* Color del texto */
+    font-size: 17px;
 }
 
 .pie__pagina .grupo__1 .red__social a {
