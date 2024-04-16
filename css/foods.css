@@ -87,6 +87,14 @@ body{
     background-color: rgb(255, 72, 72);
 }
 
+.pricing-panel .card #extra{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: small;
+    font-weight: 300;
+    color: red;
+}
+
 .pricing-panel .card #extra-text{
     margin-top: 10px;
     padding-top: 10px;

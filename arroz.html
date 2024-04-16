@@ -9,9 +9,6 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/foods.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="js/foods.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,8 +93,8 @@
         </section>
         <section class="pricing-panel">
             <div class="card">
-                <img src="img/wantanfritadepollo.jpg" alt="Servicio 1">
-                <h3>Wantan Frita de Pollo</h3>
+                <img src="img/arrozhongkong.jpg" alt="Servicio 1">
+                <h3>Arroz Hong Kong</h3>
                 <p>Cantidad:
                     <span id="contenedor-botones">
                         <button class="restar">-</button>
@@ -106,7 +103,67 @@
                     </span>
                 </p>
                 <p>Precio: L.
-                    <span class="price-items">160</span>
+                    <span class="price-items">220</span>
+                </p>
+                <span id="extra">* Incluye Pollo, Res y Camarón</span>
+                <div class="container-details">
+                    <button type="submit" id="btn_order">Ordenar</button>
+                </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
+            </div>
+
+            <div class="card">
+                <img src="img/arrozconcamaron.jpg" alt="Servicio 1">
+                <h3>Arroz con Camarón</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
+                <p>Precio: L.
+                    <span class="price-items">270</span>
+                </p>
+                <span id="extra">* Solo Camarón</span>
+                <div class="container-details">
+                    <button type="submit" id="btn_order">Ordenar</button>
+                </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
+            </div>
+
+            <div class="card">
+                <img src="img/arrozconmariscos.jpg" alt="Servicio 1">
+                <h3>Arroz con Mariscos</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
+                <p>Precio: L.
+                    <span class="price-items">290</span>
+                </p>
+                <span id="extra">* Camarón, Caracol y Filete</span>
+                <div class="container-details">
+                    <button type="submit" id="btn_order">Ordenar</button>
+                </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
+            </div>
+
+            <div class="card">
+                <img src="img/arrozconpollo.jpg" alt="Servicio 1">
+                <h3>Arroz con Pollo</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
+                <p>Precio: L.
+                    <span class="price-items">220</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
@@ -115,8 +172,8 @@
             </div>
 
             <div class="card">
-                <img src="img/wantanfritadecamaron.jpg" alt="Servicio 2">
-                <h3>Wantan Frita de Camarón</h3>
+                <img src="img/arrozconpollores.jpg" alt="Servicio 1">
+                <h3>Arroz con Pollo y Res</h3>
                 <p>Cantidad:
                     <span id="contenedor-botones">
                         <button class="restar">-</button>
@@ -125,7 +182,7 @@
                     </span>
                 </p>
                 <p>Precio: L.
-                    <span class="price-items">230</span>
+                    <span class="price-items">220</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
@@ -134,8 +191,8 @@
             </div>
 
             <div class="card">
-                <img src="img/tacoschinos.jpg" alt="Servicio 3">
-                <h3>Tacos Chinos</h3>
+                <img src="img/arrozconcerdo.jpg" alt="Servicio 1">
+                <h3>Arroz con Cerdo</h3>
                 <p>Cantidad:
                     <span id="contenedor-botones">
                         <button class="restar">-</button>
@@ -144,8 +201,7 @@
                     </span>
                 </p>
                 <p>Precio: L.
-                    <button class="price-selector">140</button>
-                    <button class="price-selector">210</button>
+                    <span class="price-items">220</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
@@ -154,8 +210,8 @@
             </div>
 
             <div class="card">
-                <img src="img/papasfritas.jpg" alt="Servicio 3">
-                <h3>Papas Fritas</h3>
+                <img src="img/arrozcantones.jpg" alt="Servicio 1">
+                <h3>Arroz Cantones</h3>
                 <p>Cantidad:
                     <span id="contenedor-botones">
                         <button class="restar">-</button>
@@ -164,8 +220,45 @@
                     </span>
                 </p>
                 <p>Precio: L.
-                    <button class="price-selector">60</button>
-                    <button class="price-selector">80</button>
+                    <span class="price-items">250</span>
+                </p>
+                <div class="container-details">
+                    <button type="submit" id="btn_order">Ordenar</button>
+                </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
+            </div>
+
+            <div class="card">
+                <img src="img/cerdoconvegetales.jpg" alt="Servicio 1">
+                <h3>Arroz con Vegetales</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
+                <p>Precio: L.
+                    <span class="price-items">190</span>
+                </p>
+                <div class="container-details">
+                    <button type="submit" id="btn_order">Ordenar</button>
+                </div>
+                <span id="extra-text">* Las imagenes pueden diferir del producto final.</span>
+            </div>
+
+            <div class="card">
+                <img src="img/arrozrescamaron.jpg" alt="Servicio 1">
+                <h3>Arroz Res Camarón</h3>
+                <p>Cantidad:
+                    <span id="contenedor-botones">
+                        <button class="restar">-</button>
+                        <span class="contador">0</span>
+                        <button class="sumar">+</button>
+                    </span>
+                </p>
+                <p>Precio: L.
+                    <span class="price-items">260</span>
                 </p>
                 <div class="container-details">
                     <button type="submit" id="btn_order">Ordenar</button>
