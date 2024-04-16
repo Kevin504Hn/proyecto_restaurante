@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contadores = document.querySelectorAll('.contador');
     const botonesRestar = document.querySelectorAll('.restar');
     const botonesSumar = document.querySelectorAll('.sumar');
+    const cards = document.querySelectorAll('.card');
 
     // Función para actualizar el contador y mostrarlo en la página
     function actualizarContador(contadorElemento, cantidad) {
@@ -28,6 +29,23 @@ document.addEventListener('DOMContentLoaded', function() {
             let cantidad = parseInt(contadorElemento.textContent);
             cantidad++; // Sumar uno a la cantidad
             actualizarContador(contadorElemento, cantidad);
+        });
+    });
+
+    cards.forEach(card => {
+        const priceSelectors = card.querySelectorAll('.price-selector');
+
+        // Event listener para los botones de selección de precio
+        priceSelectors.forEach(selector => {
+            selector.addEventListener('click', () => {
+                // Desactivar todos los botones de precio dentro de la misma tarjeta
+                priceSelectors.forEach(button => {
+                    button.classList.remove('selected');
+                });
+
+                // Activar el botón seleccionado
+                selector.classList.add('selected');
+            });
         });
     });
 });
