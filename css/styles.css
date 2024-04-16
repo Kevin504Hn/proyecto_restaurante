@@ -118,7 +118,8 @@ a {
     /* Mostrar como cuadrícula */
     grid-template-columns: repeat(3, 1fr);
     /* Repe```tir 3 columnas con el mismo tamaño */
-    grid-gap: 48px;
+    grid-gap: 48px;    /*ESTE ES EL ERROR DEL HEADER Y FOOTER*/
+    /*LINEA 115-120 TAMBIEN*//*EL HEADER Y FOOTER NO TIENEN QUE IR TAN CARGADOS*/
     /* Espacio entre celdas */
     padding: 45px 0px;
     /* Relleno superior e inferior */
