@@ -116,10 +116,9 @@ a {
     /* Margen automático */
     display: grid;
     /* Mostrar como cuadrícula */
-    grid-template-columns: repeat(3, 1fr);
-    /* Repe```tir 3 columnas con el mismo tamaño */
-    grid-gap: 48px;    /*ESTE ES EL ERROR DEL HEADER Y FOOTER*/
-    /*LINEA 115-120 TAMBIEN*//*EL HEADER Y FOOTER NO TIENEN QUE IR TAN CARGADOS*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Repe```tir columnas con un ancho mínimo de 300px */
+    grid-gap: 24px;
     /* Espacio entre celdas */
     padding: 45px 0px;
     /* Relleno superior e inferior */
@@ -141,16 +140,18 @@ a {
 }
 
 .pie__pagina .grupo__1 .caja figure img {
-    width: 250px;
-    /* Ancho de imagen */
+    max-width: 100%;
+    /* Ancho máximo */
+    height: auto;
+    /* Altura automática */
 }
 
 .pie__pagina .grupo__1 .caja h2 {
     color: var(--white-color);
     /* Color del texto */
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     /* Margen inferior */
-    font-size: 20px;
+    font-size: 18px;
     /* Tamaño de fuente */
 }
 
@@ -160,21 +161,21 @@ a {
 }
 
 .pie__pagina .grupo__1 .red__social a {
-    font-size: 35px;
+    font-size: 25px;
     /* Tamaño de fuente */
     display: inline-block;
     /* Mostrar como bloque en línea */
     text-decoration: none;
     /* Quitar decoración de enlace */
-    width: 45px;
+    width: 35px;
     /* Ancho */
-    height: 45px;
+    height: 35px;
     /* Altura */
-    line-height: 45px;
+    line-height: 35px;
     /* Altura de línea */
     color: var(--white-color);
     /* Color del texto */
-    margin-right: 10px;
+    margin-right: 8px;
     /* Margen derecho */
     background-color: var(--first-color);
     /* Color de fondo */
@@ -203,47 +204,67 @@ a {
     /* Tamaño de fuente */
 }
 
-/* Navegación para dispositivos móviles */
+/* Media queries para hacer responsive */
+@media only screen and (max-width: 768px) {
+    .pie__pagina .grupo__1 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 16px;
+        padding: 30px 0px;
+    }
+
+    .pie__pagina .grupo__1 .caja h2 {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .pie__pagina .grupo__1 .red__social a {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 6px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .pie__pagina .grupo__1 .red__social a {
+        font-size: 18px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        margin-right: 4px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .nav__menu {
         background: linear-gradient(180deg, var(--first-color) 0%, var(--first-color-alt) 100%);
-        /* Degradado de fondo */
         border-radius: 56px 56px 0 0;
-        /* Bordes redondeados */
     }
 }
 
 .nav__list {
     display: flex;
-    /* Mostrar como flex */
     column-gap: 4.5rem;
-    /* Espacio entre columnas */
 }
 
 .nav__link {
     color: var(--white-color);
-    /* Color del texto del enlace */
     font-family: var(--second-font);
-    /* Fuente secundaria */
 }
 
 .nav__link:hover {
     color: var(--second-color);
-    /* Color del texto del enlace al pasar el mouse */
 }
 
-/* Para dispositivos grandes */
 .nav {
     height: calc(var(--header-height) + 2rem);
-    /* Altura del encabezado */
     justify-content: space-between;
-    /* Justificar contenido */
 }
 
 @media screen and (min-width: 1152px) {
     .container {
         margin-inline: auto;
-        /* Margen automático */
     }
 }
 
