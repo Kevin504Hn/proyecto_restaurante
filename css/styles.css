@@ -118,7 +118,7 @@ a {
     /* Mostrar como cuadrícula */
     grid-template-columns: repeat(3, 1fr);
     /* Repe```tir 3 columnas con el mismo tamaño */
-    grid-gap: 50px;
+    grid-gap: 48px;
     /* Espacio entre celdas */
     padding: 45px 0px;
     /* Relleno superior e inferior */
