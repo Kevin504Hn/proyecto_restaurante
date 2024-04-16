@@ -44,7 +44,7 @@ body{
     padding: 1rem;
     border-radius: 5px;
     outline: 2px solid #c5c5c5;
-    box-shadow: 2px solid #000;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pricing-panel .card img{
